@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34729.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "52_Phu_57_Qui_NUNIT", "52_Phu_57_Qui_NUNIT\52_Phu_57_Qui_NUNIT.csproj", "{BD11DFF8-A897-44EB-ADB5-E1DBC7F8CC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HinhTronTest_52_Phu_57_Qui", "HinhTronTest_52_Phu_57_Qui\HinhTronTest_52_Phu_57_Qui.csproj", "{171B44B0-C447-4D99-A988-D2F13AF63B11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD11DFF8-A897-44EB-ADB5-E1DBC7F8CC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD11DFF8-A897-44EB-ADB5-E1DBC7F8CC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD11DFF8-A897-44EB-ADB5-E1DBC7F8CC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD11DFF8-A897-44EB-ADB5-E1DBC7F8CC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171B44B0-C447-4D99-A988-D2F13AF63B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171B44B0-C447-4D99-A988-D2F13AF63B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171B44B0-C447-4D99-A988-D2F13AF63B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171B44B0-C447-4D99-A988-D2F13AF63B11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {560C35B5-804B-4489-A34F-BF89B54F10B1}
+	EndGlobalSection
+EndGlobal

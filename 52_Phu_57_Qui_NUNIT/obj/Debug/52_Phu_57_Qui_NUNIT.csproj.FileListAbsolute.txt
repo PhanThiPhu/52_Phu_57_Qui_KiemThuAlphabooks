@@ -1,0 +1,11 @@
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\bin\Debug\52_Phu_57_Qui_NUNIT.exe.config
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\bin\Debug\52_Phu_57_Qui_NUNIT.exe
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\bin\Debug\52_Phu_57_Qui_NUNIT.pdb
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\obj\Debug\52_Phu_57_Qui_NUNIT.csproj.AssemblyReference.cache
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\obj\Debug\_52_Phu_57_Qui_NUNIT.Form1.resources
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\obj\Debug\_52_Phu_57_Qui_NUNIT.Properties.Resources.resources
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\obj\Debug\52_Phu_57_Qui_NUNIT.csproj.GenerateResource.cache
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\obj\Debug\52_Phu_57_Qui_NUNIT.csproj.CoreCompileInputs.cache
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\obj\Debug\52_Phu_57_Qui_NUNIT.exe
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\obj\Debug\52_Phu_57_Qui_NUNIT.pdb
+D:\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\bin\Debug\Data_52_Phu_57_Qui\TestData_52_Phu_57_Qui.csv
