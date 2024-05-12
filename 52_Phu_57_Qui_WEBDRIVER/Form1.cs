@@ -25,17 +25,34 @@ namespace _52_Phu_57_Qui_WEBDRIVER
 
         }
         //_57_Qui_52_Phu
-        private void navigate()
+        private void Navigate()
         {
             ChromeDriverService chrome = ChromeDriverService.CreateDefaultService();
             chrome.HideCommandPromptWindow = true;
             driver = new ChromeDriver(chrome);
             driver.Navigate().GoToUrl(webURL);
         }
+        private void SignInWithRightAccount()
+        {
+            IWebElement HumanButton = driver.FindElement(By.XPath(" (/ html / body / header / div / div / div[2] / div[1] / div[2] / div / div[2] / a)"));
+            HumanButton.Click();
+            IWebElement account = driver.FindElement(By.XPath("/html/body/main/div/div/div/div/div/div[1]/div[1]/form/fieldset[1]/input"));
+            account.SendKeys("ngquiofficial@gmail.com");
+            IWebElement password = driver.FindElement(By.XPath("/html/body/main/div/div/div/div/div/div[1]/div[1]/form/fieldset[2]/input"));
+            password.SendKeys("123456789aA");
+            IWebElement SignInButton = driver.FindElement(By.XPath("/html/body/main/div/div/div/div/div/div[1]/div[1]/form/button"));
+            SignInButton.Click();
+        }
+        //52_Phú
 
+
+
+
+        //57_Quí
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            navigate();
+            Navigate();
+            SignInWithRightAccount();
         }
     }
 }
