@@ -22,3 +22,5 @@ C:\Users\DELL\Downloads\52_Phu_57_Qui_KiemThuLinkedin\DangKy\obj\Debug\DangKy_52
 C:\Users\DELL\Downloads\52_Phu_57_Qui_KiemThuLinkedin\DangKy\obj\Debug\DangKy_52_Phu_52_Qui.csproj.CopyComplete
 C:\Users\DELL\Downloads\52_Phu_57_Qui_KiemThuLinkedin\DangKy\obj\Debug\DangKy.dll
 C:\Users\DELL\Downloads\52_Phu_57_Qui_KiemThuLinkedin\DangKy\obj\Debug\DangKy.pdb
+C:\Users\DELL\Downloads\52_Phu_57_Qui_KiemThuLinkedin\DangKy\obj\Debug\DangKy_52_Phu_52_Qui.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\52_Phu_57_Qui_KiemThuLinkedin\DangKy\bin\Debug\RegisterData_52_Phu_57_Qui\TestRegisterData_52_Phu_57_Qui.csv
