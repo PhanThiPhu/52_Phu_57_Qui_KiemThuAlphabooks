@@ -9,7 +9,7 @@ namespace HinhTronTest_52_Phu_57_Qui
     {
         public TestContext TestContext { get; set; } //Khai báo thuộc tính TestContext
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
-            @"C:\Users\Admin\Desktop\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\Data_52_Phu_57_Qui\TestData_52_Phu_57_Qui.csv", "TestData_52_Phu_57_Qui#csv", DataAccessMethod.Sequential)] // Dẫn đường dẫn file .csv
+                          @".\Data_52_Phu_57_Qui\TestData_52_Phu_57_Qui.csv", "TestData_52_Phu_57_Qui#csv", DataAccessMethod.Sequential)] //Dẫn đường dẫn file csv
 
         [TestMethod]
         public void TinhChuViHinhTron_52_Phu_57_Qui()
@@ -22,7 +22,7 @@ namespace HinhTronTest_52_Phu_57_Qui
             Assert.AreEqual(chuViDuKien_52_Phu_57_Qui, chuViThucTe_52_Phu_57_Qui, 0.1); //So sánh giá trị chu vi tính toán thực tế với giá trị chu vi mong đợi từ dữ liệu với sai số chênh lệch là 0.1
         }
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
-            @"C:\Users\Admin\Desktop\52_Phu_57_Qui_KiemThuLinkedin\52_Phu_57_Qui_NUNIT\Data_52_Phu_57_Qui\TestData_52_Phu_57_Qui.csv", "TestData_52_Phu_57_Qui#csv", DataAccessMethod.Sequential)]
+                          @".\Data_52_Phu_57_Qui\TestData_52_Phu_57_Qui.csv", "TestData_52_Phu_57_Qui#csv", DataAccessMethod.Sequential)]//Dẫn đường dẫn file csv
         [TestMethod]
         public void TinhDienTichHinhTron_52_Phu_57_Qui()
         {
