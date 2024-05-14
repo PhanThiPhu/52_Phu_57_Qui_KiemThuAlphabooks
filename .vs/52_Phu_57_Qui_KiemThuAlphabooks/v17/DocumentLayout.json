@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{D1BBF86B-A258-4A37-A29A-48C3673260E8}|ChucNang4_DoiMatKhau_52_Phu_57_Qui\\DoiMatKhau_52_Phu_57_Qui.csproj|solutionrelative:chucnang4_doimatkhau_52_phu_57_qui\\doimatkhaudata_52_phu_57_qui\\doimatkhaudata_52_phu_57_qui.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4936797E-A891-465F-82F8-2A0409D433DB}|DangKy\\DangKy_52_Phu_52_Qui.csproj|c:\\users\\admin\\desktop\\52_phu_57_qui_kiemthualphabooks\\dangky\\testdangky_52_phu_57_qui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4936797E-A891-465F-82F8-2A0409D433DB}|DangKy\\DangKy_52_Phu_52_Qui.csproj|C:\\Users\\Admin\\Desktop\\52_Phu_57_Qui_KiemThuAlphabooks\\dangky\\testdangky_52_phu_57_qui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4936797E-A891-465F-82F8-2A0409D433DB}|DangKy\\DangKy_52_Phu_52_Qui.csproj|solutionrelative:dangky\\testdangky_52_phu_57_qui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -43,8 +43,7 @@
               "RelativeToolTip": "DangKy\\TestDangKy_52_Phu_57_Qui.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAswDkAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T22:14:44.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T22:14:44.173Z"
             }
           ]
         }
