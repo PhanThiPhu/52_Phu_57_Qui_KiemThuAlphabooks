@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\52_Phu_57_Qui_KiemThuLinkedin\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\52_Phu_57_Qui_KiemThuAlphabooks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4936797E-A891-465F-82F8-2A0409D433DB}|DangKy\\DangKy_52_Phu_52_Qui.csproj|c:\\users\\admin\\documents\\52_phu_57_qui_kiemthulinkedin\\dangky\\testdangky_52_phu_57_qui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1BBF86B-A258-4A37-A29A-48C3673260E8}|ChucNang4_DoiMatKhau_52_Phu_57_Qui\\DoiMatKhau_52_Phu_57_Qui.csproj|c:\\users\\admin\\desktop\\52_phu_57_qui_kiemthualphabooks\\chucnang4_doimatkhau_52_phu_57_qui\\doimatkhaudata_52_phu_57_qui\\doimatkhaudata_52_phu_57_qui.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D1BBF86B-A258-4A37-A29A-48C3673260E8}|ChucNang4_DoiMatKhau_52_Phu_57_Qui\\DoiMatKhau_52_Phu_57_Qui.csproj|solutionrelative:chucnang4_doimatkhau_52_phu_57_qui\\doimatkhaudata_52_phu_57_qui\\doimatkhaudata_52_phu_57_qui.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4936797E-A891-465F-82F8-2A0409D433DB}|DangKy\\DangKy_52_Phu_52_Qui.csproj|c:\\users\\admin\\desktop\\52_phu_57_qui_kiemthualphabooks\\dangky\\testdangky_52_phu_57_qui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4936797E-A891-465F-82F8-2A0409D433DB}|DangKy\\DangKy_52_Phu_52_Qui.csproj|solutionrelative:dangky\\testdangky_52_phu_57_qui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DoiMatKhauData_52_Phu_57_Qui.csv",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\52_Phu_57_Qui_KiemThuAlphabooks\\ChucNang4_DoiMatKhau_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui.csv",
+              "RelativeDocumentMoniker": "ChucNang4_DoiMatKhau_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui.csv",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\52_Phu_57_Qui_KiemThuAlphabooks\\ChucNang4_DoiMatKhau_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui.csv",
+              "RelativeToolTip": "ChucNang4_DoiMatKhau_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui\\DoiMatKhauData_52_Phu_57_Qui.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-05-14T20:28:14.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TestDangKy_52_Phu_57_Qui.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\52_Phu_57_Qui_KiemThuLinkedin\\DangKy\\TestDangKy_52_Phu_57_Qui.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\52_Phu_57_Qui_KiemThuAlphabooks\\DangKy\\TestDangKy_52_Phu_57_Qui.cs",
               "RelativeDocumentMoniker": "DangKy\\TestDangKy_52_Phu_57_Qui.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\52_Phu_57_Qui_KiemThuLinkedin\\DangKy\\TestDangKy_52_Phu_57_Qui.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\52_Phu_57_Qui_KiemThuAlphabooks\\DangKy\\TestDangKy_52_Phu_57_Qui.cs",
               "RelativeToolTip": "DangKy\\TestDangKy_52_Phu_57_Qui.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAswDkAAACiAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAswDkAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T22:14:44.173Z",
               "EditorCaption": ""

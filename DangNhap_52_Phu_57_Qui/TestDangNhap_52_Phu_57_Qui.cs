@@ -41,8 +41,13 @@ namespace DangNhap_52_Phu_57_Qui
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                          @".\LoginData_52_Phu_57_Qui\TestLoginData_52_Phu_57_Qui.csv", "TestLoginData_52_Phu_57_Qui#csv", DataAccessMethod.Sequential)]//Đường dẫn file .csv
-        
-        //Test case 2 Đăng ký tài khoản thất bại
+
+        //Test case 2 Đăng nhập tài khoản thất bại
+        //TC2.1 Đăng nhập tài khoản(Không nhập trường Email)
+        //TC2.2 Đăng nhập tài khoản(Không nhập trường Mật khẩu)
+        //TC2.3 Đăng nhập tài khoản(Không nhập cả 2 trường)
+        //TC2.4 Đăng nhập tài khoản(Nhập sai trường Email)
+        //TC2.5 Đăng nhập tài khoản(Nhập sai trường Mật khẩu)
         public void TestCase2_DangNhapThatBai_52_Phu_57_Qui()
         {
             SetUp_52_Phu_57_Qui();

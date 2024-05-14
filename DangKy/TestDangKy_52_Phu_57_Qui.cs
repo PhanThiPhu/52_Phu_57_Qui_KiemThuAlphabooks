@@ -47,6 +47,21 @@ namespace DangKy_52_Phu_57_Qui
                          @".\RegisterData_52_Phu_57_Qui\TestRegisterData_52_Phu_57_Qui.csv", "TestRegisterData_52_Phu_57_Qui#csv", DataAccessMethod.Sequential)] //Đường dẫn file .csv
 
         //Test case 2 Đăng ký tài khoản thất bại 
+        //TC2.1 Đăng ký tài khoản (Không nhập trường Họ)
+        //TC2.2 Đăng ký tài khoản (Không nhập trường Tên)
+        //TC2.3 Đăng ký tài khoản(Không nhập trường Số điện thoại)
+        //TC2.4 Đăng ký tài khoản (Không nhập trường Email)
+        //TC2.5 Đăng ký tài khoản (Không nhập trường Mật khẩu)
+        //TC2.6 Đăng ký tài khoản (Không nhập tất cả các trường)
+        //TC2.7 Đăng ký tài khoản (Nhập trường Số điện thoại không đủ 10 số)
+        //TC2.8 Đăng ký tài khoản (Nhập trường Số điện thoại nhiều hơn 10 số)
+        //TC2.9 Đăng ký tài khoản (Nhập trường Số điện thoại đã đăng ký trước đó)
+        //TC2.10 Đăng ký tài khoản (Nhập trường Email không có ‘@’)
+        //TC2.11 Đăng ký tài khoản (Nhập trường Email không có phần đứng trước ‘@’)
+        //TC2.12 Đăng ký tài khoản (Nhập trường Email không có phần đứng sau ‘@’)
+        //TC2.13 Đăng ký tài khoản (Nhập trường  email đã đăng ký trước đó)
+        //TC2.14 Đăng ký tài khoản (Nhập trường Mật khẩu ít hơn 6 kí tự )
+        //TC2.15 Đăng ký tài khoản (Nhập trường Mật khẩu nhiều hơn 50 kí tự)
         public void TestCase2_DangKyThatBai_52_Phu_57_Qui()
         {
             SetUp_52_Phu_57_Qui();
