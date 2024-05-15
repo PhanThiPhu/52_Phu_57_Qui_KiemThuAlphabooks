@@ -24,7 +24,7 @@ namespace QuenMatKhau_52_Phu_57_Qui
         {
             try 
             {
-                // Bắt element của thông báo bằng classname
+                // Bắt element của thông báo thành công bằng classname
                 IWebElement Notification_52_Phu_57_Qui = driver_52_Phu_57_Qui.FindElement(By.ClassName("success"));
                 // Ép chuỗi để lấy kết quả thông báo
                 string notification_52_Phu_57_Qui = Notification_52_Phu_57_Qui.Text;
@@ -33,7 +33,7 @@ namespace QuenMatKhau_52_Phu_57_Qui
             }
             catch(NoSuchElementException) 
             {
-                // Bắt element của thông báo bằng classname
+                // Bắt element của thông báo không thành công bằng classname
                 IWebElement Notification_52_Phu_57_Qui = driver_52_Phu_57_Qui.FindElement(By.ClassName("error"));
                 // Ép chuỗi để lấy kết quả thông báo
                 string notification_52_Phu_57_Qui = Notification_52_Phu_57_Qui.Text;
@@ -62,9 +62,11 @@ namespace QuenMatKhau_52_Phu_57_Qui
             Thread.Sleep(2000); // Dừng 2 giây.
             IWebElement QuenMatKhau_VaoDay2_52_Phu_57_Qui = driver_52_Phu_57_Qui.FindElement(By.XPath("/html/body/main/div/div/div/div/div/div[1]/div[1]/p/a")); // Tìm và chọn liên kết khác để quay lại trang đăng nhập.
             QuenMatKhau_VaoDay2_52_Phu_57_Qui.Click(); // Click vào liên kết để quay lại trang khôi phục mật khẩu
+            //So sánh kết quả thông báo mong đợi và thực tế
             string expected_noti_52_Phu_57_Qui = "Chúng tôi đã gửi 1 email đến bạn. Vui lòng kiểm tra để đặt lại mật khẩu";
             string actual_noti_52_Phu_57_Qui = Get_Notification_52_Phu_57_Qui();
             Assert.AreEqual(expected_noti_52_Phu_57_Qui, actual_noti_52_Phu_57_Qui);
+            //đóng trình duyệt
             Thread.Sleep(5000); // Dừng 5 giây.
             driver_52_Phu_57_Qui.Quit(); // Đóng trình duyệt.
         }
@@ -79,8 +81,7 @@ namespace QuenMatKhau_52_Phu_57_Qui
         // TC2.3 Quên mật khẩu không thành công (Chỉ nhập đầu gmail)
         // TC2.4 Quên mật khẩu không thành công (Chỉ nhập đuôi gmail)
         // TC2.5 Quên mật khẩu không thành công (Không nhập gmail)
-        // TC2.6 Quên mật khẩu không thành côngu (Nhập kí tự đặc biệt trước đuôi gmail)
-        // TC2.7 Quên mật khẩu không thành công (Nhập kí tự @ trước đuôi gmail)
+        // TC2.6 Quên mật khẩu không thành công (Nhập kí tự @ trước đuôi gmail)
         public void TC2_QuenMatKhauKhongThanhCong_52_Phu_57_Qui()
         {
             try
@@ -101,7 +102,7 @@ namespace QuenMatKhau_52_Phu_57_Qui
                 IWebElement Button_SendMail_52_Phu_57_Qui = driver_52_Phu_57_Qui.FindElement(By.XPath("/html/body/main/div/div/div/div/div/div[1]/div[2]/form/input[3]")); // Tìm và chọn nút gửi email khôi phục mật khẩu.
                 Button_SendMail_52_Phu_57_Qui.Click(); // Click vào nút gửi email khôi phục mật khẩu.
                 //khai báo kết quả kì vọng
-                string expected_noti_52_Phu_57_Qui = "Đổi password thành công";
+                string expected_noti_52_Phu_57_Qui = "Chúng tôi đã gửi 1 email đến bạn. Vui lòng kiểm tra để đặt lại mật khẩu";
                 //khai báo kết quả thực tế
                 string actual_noti_52_Phu_57_Qui = Get_Notification_52_Phu_57_Qui();
                 //so sánh hai kết quả có khác nhau không
@@ -110,7 +111,7 @@ namespace QuenMatKhau_52_Phu_57_Qui
                 Thread.Sleep(3000);
                 driver_52_Phu_57_Qui.Quit();
             }
-            //trường hợp không bắt được element thông báo kết quả tức là không thấy đổi mật khẩu được lập tức đóng trình duyệt và pass testcase
+            //trường hộp thứ 2 có thể xảy ra là thông báo xuất hiện bằng form dẫn tới không bắt được element, đóng trình duyệt và testcase pass
             catch (NoSuchElementException)
             {
                 Thread.Sleep(3000);
