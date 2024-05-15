@@ -1,8 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.Threading;
+using NUnit.Framework;
+using TestContext = Microsoft.VisualStudio.TestTools.UnitTesting.TestContext;
+using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace DangNhap_52_Phu_57_Qui
 {
@@ -14,9 +17,8 @@ namespace DangNhap_52_Phu_57_Qui
         public void SetUp_52_Phu_57_Qui()
         {
             driver_52_Phu_57_Qui.Navigate().GoToUrl("https://www.alphabooks.vn/");
-
         }
-        //Testcase 1 Đăng nhập tài khoản thành công 
+
         [TestMethod]
         public void TestCase1_DangNhapThanhCong_52_Phu_57_Qui()
         {
@@ -31,9 +33,12 @@ namespace DangNhap_52_Phu_57_Qui
 
             Thread.Sleep(3000);
             driver_52_Phu_57_Qui.FindElement(By.ClassName("btn-login")).Click(); //element nút đăng nhập
-
             //Dừng 10s rồi tắt trình duyệt 
-            Thread.Sleep(6000);
+            //so sánh 2 link có đạt được như kì vọng
+            string expected_url_52_Phu_57_Qui = "https://www.alphabooks.vn/account";//khai báo url kì vọng
+            string actual_url_52_Phu_57_Qui = driver_52_Phu_57_Qui.Url; //khai báo url thực tế khi thực hiện 1 t
+            Assert.AreEqual(expected_url_52_Phu_57_Qui, actual_url_52_Phu_57_Qui);
+            //Thread.Sleep(6000);
             driver_52_Phu_57_Qui.Quit();
         }
         public TestContext TestContext { get; set; }//Khai báo thuộc tính TestContext
@@ -65,6 +70,10 @@ namespace DangNhap_52_Phu_57_Qui
 
             Thread.Sleep(3000);
             driver_52_Phu_57_Qui.FindElement(By.ClassName("btn-login")).Click();//element nút đăng nhập
+
+            string expected_url_52_Phu_57_Qui = "https://www.alphabooks.vn/account";//khai báo url kì vọng
+            string actual_url_52_Phu_57_Qui = driver_52_Phu_57_Qui.Url; //khai báo url thực tế khi thực hiện 1 t
+            Assert.AreNotEqual(expected_url_52_Phu_57_Qui, actual_url_52_Phu_57_Qui);
 
             //Dừng 10s rồi tắt trình duyệt 
             Thread.Sleep(6000);
