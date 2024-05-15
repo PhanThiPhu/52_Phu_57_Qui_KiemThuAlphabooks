@@ -3,6 +3,9 @@ using System;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
+using TestContext = Microsoft.VisualStudio.TestTools.UnitTesting.TestContext;
+using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace DangKy_52_Phu_57_Qui
 {
@@ -16,6 +19,7 @@ namespace DangKy_52_Phu_57_Qui
             driver_52_Phu_57_Qui.Navigate().GoToUrl("https://www.alphabooks.vn/");
 
         }
+
         //Testcase 1 Đăng ký tài khoản thành công 
         [TestMethod]
         public void TestCase1_DangKyThanhCong_52_Phu_57_Qui()
@@ -36,8 +40,13 @@ namespace DangKy_52_Phu_57_Qui
             driver_52_Phu_57_Qui.FindElement(By.Id("password")).SendKeys("12345678");//element mật khẩu
             driver_52_Phu_57_Qui.FindElement(By.ClassName("btn-login")).Click();//element nút đăng ký
 
-            //Dừng 10s rồi tắt trình duyệt 
-            Thread.Sleep(10000);
+            //so sánh 2 link có đạt được như ý muốn 
+            string expected_url_52_Phu_57_Qui = "https://www.alphabooks.vn/account";//khai báo url mong đợi
+            string actual_url_52_Phu_57_Qui = driver_52_Phu_57_Qui.Url; //khai báo url thực tế
+            Assert.AreEqual(expected_url_52_Phu_57_Qui, actual_url_52_Phu_57_Qui);//so sánh giá trị mong đợi và giá trị thực tế
+
+            //Dừng 6s rồi tắt trình duyệt 
+            Thread.Sleep(6000);
             driver_52_Phu_57_Qui.Quit();
         }
         public TestContext TestContext { get; set; } //Khai báo thuộc tính TestContext
@@ -84,8 +93,12 @@ namespace DangKy_52_Phu_57_Qui
             driver_52_Phu_57_Qui.FindElement(By.Id("password")).SendKeys(password);//element mật khẩu
             driver_52_Phu_57_Qui.FindElement(By.ClassName("btn-login")).Click();//element đăng ký
 
-            //Dừng 10s rồi tắt trình duyệt 
-            Thread.Sleep(10000);
+            //Kiểm tra xem form báo lỗi có nhảy lên không
+            Assert.IsTrue(driver_52_Phu_57_Qui.FindElement(By.ClassName("error")).Enabled);
+
+
+        //Dừng 10s rồi tắt trình duyệt 
+        Thread.Sleep(10000);
             driver_52_Phu_57_Qui.Quit();
         }
     }

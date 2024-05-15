@@ -19,6 +19,7 @@ namespace DangNhap_52_Phu_57_Qui
             driver_52_Phu_57_Qui.Navigate().GoToUrl("https://www.alphabooks.vn/");
         }
 
+        //Testcase 1 Đăng nhập tài khoản thành công
         [TestMethod]
         public void TestCase1_DangNhapThanhCong_52_Phu_57_Qui()
         {
@@ -34,11 +35,11 @@ namespace DangNhap_52_Phu_57_Qui
             Thread.Sleep(3000);
             driver_52_Phu_57_Qui.FindElement(By.ClassName("btn-login")).Click(); //element nút đăng nhập
             //Dừng 10s rồi tắt trình duyệt 
-            //so sánh 2 link có đạt được như kì vọng
-            string expected_url_52_Phu_57_Qui = "https://www.alphabooks.vn/account";//khai báo url kì vọng
-            string actual_url_52_Phu_57_Qui = driver_52_Phu_57_Qui.Url; //khai báo url thực tế khi thực hiện 1 t
-            Assert.AreEqual(expected_url_52_Phu_57_Qui, actual_url_52_Phu_57_Qui);
-            //Thread.Sleep(6000);
+            //so sánh 2 link có đạt được như ý muốn
+            string expected_url_52_Phu_57_Qui = "https://www.alphabooks.vn/account";//khai báo url mong đợi
+            string actual_url_52_Phu_57_Qui = driver_52_Phu_57_Qui.Url; //khai báo url thực tết
+            Assert.AreEqual(expected_url_52_Phu_57_Qui, actual_url_52_Phu_57_Qui);//so sánh giá trị mong đợi và giá trị thực tế
+            Thread.Sleep(6000);
             driver_52_Phu_57_Qui.Quit();
         }
         public TestContext TestContext { get; set; }//Khai báo thuộc tính TestContext
@@ -70,10 +71,10 @@ namespace DangNhap_52_Phu_57_Qui
 
             Thread.Sleep(3000);
             driver_52_Phu_57_Qui.FindElement(By.ClassName("btn-login")).Click();//element nút đăng nhập
-
-            string expected_url_52_Phu_57_Qui = "https://www.alphabooks.vn/account";//khai báo url kì vọng
-            string actual_url_52_Phu_57_Qui = driver_52_Phu_57_Qui.Url; //khai báo url thực tế khi thực hiện 1 t
-            Assert.AreNotEqual(expected_url_52_Phu_57_Qui, actual_url_52_Phu_57_Qui);
+            //so sánh 2 link có đạt được như mong muốn
+            string expected_url_52_Phu_57_Qui = "https://www.alphabooks.vn/account";//khai báo url mong đợi
+            string actual_url_52_Phu_57_Qui = driver_52_Phu_57_Qui.Url; //khai báo url thực tế
+            Assert.AreNotEqual(expected_url_52_Phu_57_Qui, actual_url_52_Phu_57_Qui);//so sánh giá trị mong đợi và thực tế
 
             //Dừng 10s rồi tắt trình duyệt 
             Thread.Sleep(6000);
